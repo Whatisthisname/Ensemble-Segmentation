@@ -23,6 +23,8 @@ def lstFiles(Path):
                 images_list.append(os.path.join(dirName, filename))
             elif ".mhd" in filename.lower():
                 images_list.append(os.path.join(dirName, filename))
+            elif ".png" in filename.lower():
+                images_list.append(os.path.join(dirName, filename))
 
     images_list = sorted(images_list, key=numericalSort)
 
